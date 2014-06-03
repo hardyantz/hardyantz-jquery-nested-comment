@@ -42,6 +42,19 @@ $(document).ready(function() {
 });
 </script>
 ```
+Get JSON Example
+```
+{
+
+    "comment_id": 1,
+    "comment_content": "hello world, this is the content",
+    "comment_author": "admin",
+    "comment_date": "2014-06-1 08:10:15",
+    "imgurl": "https:<image>.jpeg"
+
+}
+```
+
 
 License
 =======
