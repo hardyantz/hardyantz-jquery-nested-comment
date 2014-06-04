@@ -55,6 +55,31 @@ Get JSON Example
 }
 ```
 
+you can add additional field
+=============================
+
+using <b>add_field</b>  option. with json variable:
+```
+var data[0] = {"attribute":"attribute_value"}
+```
+
+if you want to add hidden field like post id and other attribute, follow this example:
+```
+var data = [];
+data[0] = {"type":"hidden","id":"post_id","name":"post_id","value":1};
+data[1] = {"type":"text", "id":"full_name","name":"full_name" };
+
+$(document).ready(function() {
+	$('div.comment-container').comment({
+        title: 'The Comments',
+        url_get: 'read.php',
+	url_submit: 'submit.php'
+        add_field: data
+	});
+});
+
+}
+```
 
 License
 =======
